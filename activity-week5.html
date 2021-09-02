@@ -1,0 +1,94 @@
+//week5 callback
+<html lang="en-US">
+    <head>
+        <title>HTML Page</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script2.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <style type="text/css">
+            .form-legend{
+                text-align: center;
+            }
+            .section-elements{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .section-elements input{
+                width: 156px;
+                margin-bottom: 10px;
+            }
+            .submit-btn-container{
+                display: flex;
+                justify-content: center;
+            }
+            
+        </style>
+    </head>
+    <body style="background-color: lightblue;">
+        <form>
+           <fieldset>
+               <legend class="form-legend">Application form </legend>
+
+               <section class="section-elements">
+                   <p>First name:</p>
+                   <input id="first-name" name="Firstname" type="text" placeholder="enter your name"/>
+
+                   <p>Last name:</p>
+                   <input id="lastname" name="Lastname" type="text" placeholder="enter your last name" required="required"/>
+
+                   <p>Email:</p>
+                   <input id="email" name="email-adress" type="email" placeholder="enter your email" required="required">
+
+                   <p>Phone number:</p>
+                   <input id="number" name="phonenumber" type="tel" placeholder="(000)-000-0000" required="required"/>
+
+                   <p>Address:</p>
+                   <input id="address" name="input" type="text" placeholder="enter your adress" required="required"/>
+
+                   <p>City:</p>
+                   <input id="city" name="city" type="text" placeholder="enter your city name" required="required"/>
+
+                   <p>URL:</p>
+                   <input id="url_prof" name="profile_url" type="url" readonly="readonly"/>
+
+                   <p>Service:</p>
+                   <input id="service" name="service_date" type="date" min="2000-01-01" max="2999-12-31"/>
+               </section>
+
+           </fieldset>
+           <div class="submit-btn-container">
+               <input id="submit-btn" type="submit" value="Enroll" onclick="alertAndDisplay()"/>
+           </div>
+           
+        </form>
+    </body>
+</html>
+
+<!-- 
+    TASK
+    
+    1) give each <input> a selector, maybe an id?
+    2) add a callback function to the submit/enroll button
+    3) the callback should console log all the values in the input text box
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
